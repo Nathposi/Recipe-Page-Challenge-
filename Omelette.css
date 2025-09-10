@@ -1,5 +1,8 @@
-/* Any comment yoUu see means that i have to work on that area, I don't really get it*/
+/* Any comment you see means that i have to work on that area, I don't really get it*/
 
+body {
+  background-color: white;
+}
 img {                    
   width: 100%;
   height: auto;
