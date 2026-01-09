@@ -1,52 +1,75 @@
-/* Any comment you see means that i have to work on that area, I don't really get it*/
-
-body {
-  background-color: white;
-}
-img {                    
+.whole {
+  max-width: 415px;
   width: 100%;
-  height: auto;
-  display: block;
-}   /*Honestly I had to search and copy and paste to make the image remain the same on all devices*/
+  margin: 15px auto;
+  background-color: aliceblue;
+}
 
-div {
-  background-color: rgb(255, 255, 221);
+img {
+  max-width: 415px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+header {
+  font-family: Young serif;
+  font-weight: 400;
 }
 
 .prep {
+  background-color: hsl(330, 100%, 98%);
+}
+
+.purple {
   color: hsl(332, 51%, 32%);
-  font-family: Trebuchet MS;
+  font-family: Young serif;
+  font-weight: 400;
 }
 
-ul, ol, li, p {
-  font-family: Outfit; 
-}
-
-h1,h2 {
+h2 {
   font-family: Young serif;
   color: hsl(14, 45%, 36%);
+  font-weight: 400;
 }
 
-tr, td {
-  border-top: 1.9px solid #ddd;
-  padding: 8px;
+p,
+li {
   font-family: Outfit;
-}
-
-
-tr:first-child,
-tr:first-child td,
-tr:first-child th {
-  border-top: none;
-} /* Searched for this to remove the extra line on top of the table*/
-
-
-
-strong {
-  color: hsl(14, 45%, 36%)
+  font-family: 400;
+  font-size: 16px;
 }
 
 table {
-   width: 55%;
-   border-collapse:collapse;
+  width: 100%;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  border-collapse: collapse;
+  padding: 5px;
 }
+
+th,
+td {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .pink {
+    width: 100%;
+    background-color: pink;
+  }
+
+  .whole {
+    min-width: 650px;
+    width: 100%;
+    margin: 0;
+  }
+
+  img {
+    max-width: 768px;
+    width: 100%;
+    border-radius: 10px;
+    margin: 15px auto;
+  }
+}
+
